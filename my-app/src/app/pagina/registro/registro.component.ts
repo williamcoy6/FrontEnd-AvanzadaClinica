@@ -17,7 +17,12 @@ export class RegistroComponent {
     this.ciudades = [];
     this.cargarCiudades();
   }
-
+  public onFileChange(event: any) {
+    if (event.target.files.length > 0) {
+      const files = event.target.files;
+      console.log(files);
+    }
+  }
   private cargarCiudades() {
     this.ciudades.push("Armenia");
     this.ciudades.push("Calarcá");

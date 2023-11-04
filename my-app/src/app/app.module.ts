@@ -7,13 +7,19 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './pagina/login/login.component';
 import { RegistroComponent } from './pagina/registro/registro.component';
 import { InicioComponent } from './pagina/inicio/inicio.component';
+import { GestionPqrsComponent } from './pagina/gestion-pqrs/gestion-pqrs.component';
+import { CrearPqrsComponent } from './pagina/crear-pqrs/crear-pqrs.component';
+import { DetallePqrsComponent } from './pagina/detalle-pqrs/detalle-pqrs.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RegistroComponent,
-    InicioComponent
+    InicioComponent,
+    GestionPqrsComponent,
+    CrearPqrsComponent,
+    DetallePqrsComponent
   ],
   imports: [
     BrowserModule,

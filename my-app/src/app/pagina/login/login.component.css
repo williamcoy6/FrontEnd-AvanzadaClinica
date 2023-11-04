@@ -1,0 +1,90 @@
+.mb {
+    align-content: center;
+    justify-content: center;
+}
+
+.botonContinuar {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.botonCrearCuenta {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#continuar {
+    color: white;
+    background-color: #0d6fc0;
+    width: 200px;
+    height: 35px;
+    font-weight: 700;
+    font-size: 20px;
+    border-bottom: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 1px 1px black;
+    cursor: pointer;
+}
+
+#crearCuenta {
+    border: none;
+    color: #073f60;
+    background-color: white;
+    width: 150px;
+    height: 30px;
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+.botonesGoogle {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#google {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    border: none;
+    color: rgb(0, 0, 0);
+    background-color: #b3b3b3;
+    width: 180px;
+    height: 35px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+#google img {
+    border-radius: 50%;
+}
+
+
+#face {
+    margin-left: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    border: none;
+    color: rgb(255, 255, 255);
+    background-color: #1a87e0;
+    width: 180px;
+    height: 35px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+#tituloLogin {
+    margin-bottom: 60px;
+    margin-left: 150px;
+}
