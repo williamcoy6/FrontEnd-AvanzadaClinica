@@ -10,7 +10,8 @@ import { InicioComponent } from './pagina/inicio/inicio.component';
 import { GestionPqrsComponent } from './pagina/gestion-pqrs/gestion-pqrs.component';
 import { CrearPqrsComponent } from './pagina/crear-pqrs/crear-pqrs.component';
 import { DetallePqrsComponent } from './pagina/detalle-pqrs/detalle-pqrs.component';
-
+import { HttpClientModule } from '@angular/common/http';
+import { AlertaComponent } from './pagina/alerta/alerta.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,11 +20,13 @@ import { DetallePqrsComponent } from './pagina/detalle-pqrs/detalle-pqrs.compone
     InicioComponent,
     GestionPqrsComponent,
     CrearPqrsComponent,
-    DetallePqrsComponent
+    DetallePqrsComponent,
+    AlertaComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     FormsModule
   ],
   providers: [],
