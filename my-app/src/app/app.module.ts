@@ -12,6 +12,8 @@ import { CrearPqrsComponent } from './pagina/crear-pqrs/crear-pqrs.component';
 import { DetallePqrsComponent } from './pagina/detalle-pqrs/detalle-pqrs.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AlertaComponent } from './pagina/alerta/alerta.component';
+import { CrearMedicoComponent } from './pagina/crear-medico/crear-medico.component';
+import { GestionCitasComponent } from './pagina/gestion-citas/gestion-citas.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +23,9 @@ import { AlertaComponent } from './pagina/alerta/alerta.component';
     GestionPqrsComponent,
     CrearPqrsComponent,
     DetallePqrsComponent,
-    AlertaComponent
+    AlertaComponent,
+    CrearMedicoComponent,
+    GestionCitasComponent
   ],
   imports: [
     BrowserModule,

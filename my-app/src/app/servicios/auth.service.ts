@@ -24,9 +24,5 @@ export class AuthService {
     return this.http.post<MensajeDTO>(`${this.authURL}/login`, loginDTO);
 
   }
-  public logout() {
-    window.sessionStorage.clear();
-    this.router.navigate(["/login"]);
-  }
 
 }

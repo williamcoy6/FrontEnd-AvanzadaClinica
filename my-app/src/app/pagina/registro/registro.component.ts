@@ -18,6 +18,8 @@ export class RegistroComponent {
   tiposDeSangre: string[];
 
   registroPacienteDTO: RegistroPacienteDTO;
+  archivos!: FileList;
+
   constructor(private imagenService: ImagenService, private authService: AuthService, private clinicaService: ClinicaService) {
     this.registroPacienteDTO = new RegistroPacienteDTO();
     this.ciudades = [];

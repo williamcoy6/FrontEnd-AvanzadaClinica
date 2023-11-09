@@ -12,3 +12,5 @@ export class AlertaComponent {
     this.alerta = null;
   }
 }
+
+export { Alerta };
