@@ -82,7 +82,7 @@
                     <div class="col-sm-10">
                         <select name="eps" required [(ngModel)]="registroPacienteDTO.eps">
                             <option value="" selected>Seleccione su EPS</option>
-                            <option [value]="item" *ngFor="let item of ciudades; index as i">{{item}}</option>
+                            <option [value]="item" *ngFor="let item of eps; index as i">{{item}}</option>
                         </select>
                     </div>
                 </div>
@@ -93,7 +93,7 @@
                     <div class="col-sm-10">
                         <select name="tipoSangre" required [(ngModel)]="registroPacienteDTO.tipoSangre">
                             <option value="" selected>Seleccione su Tipo de sangre</option>
-                            <option [value]="item" *ngFor="let item of ciudades; index as i">{{item}}</option>
+                            <option [value]="item" *ngFor="let item of tiposDeSangre; index as i">{{item}}</option>
                         </select>
                     </div>
                 </div>
@@ -127,7 +127,9 @@
                     </div>
                 </div>
                 <p *ngIf="!sonIguales()">Las contraseñas no coinciden</p>
-                <button (click)="registrar()"> [disabled]="f.invalid || !sonIguales()">Registrarse</button>
+                <button class="btn btn-primary" (click)="registrar()"
+                    [disabled]="f.invalid || !sonIguales()">Registrarse
+                </button>
                 <app-alerta [alerta]="alerta"></app-alerta>
             </form>
         </div>
