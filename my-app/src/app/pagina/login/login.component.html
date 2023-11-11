@@ -7,11 +7,17 @@
             <form>
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Correo electrónico :</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <input #correo="ngModel"
+                        [ngClass]="correo.invalid && (correo.dirty || correo.touched) ? 'is-invalid' : ''" type="email"
+                        name="correo" class="form-control" required [(ngModel)]="loginDTO.correo" />
                 </div>
-                <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Contraseña :</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
+
+                <div>
+                    <label class="col-sm-2 col-form-label">Contraseña: </label>
+                    <input #password="ngModel"
+                        [ngClass]="password.invalid && (password.dirty || password.touched) ? 'is-invalid' : ''"
+                        type="password" name="password" class="form-control" required
+                        [(ngModel)]="loginDTO.contrasenia" />
                 </div>
             </form>
 

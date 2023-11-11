@@ -1,6 +1,7 @@
 
 import { Component, Input } from '@angular/core';
 import { Alerta } from 'src/app/modelo/alerta';
+
 @Component({
   selector: 'app-alerta',
   templateUrl: './alerta.component.html',
