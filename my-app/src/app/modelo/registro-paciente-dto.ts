@@ -1,14 +1,14 @@
 export class RegistroPacienteDTO {
     cedula: string = "";
     nombre: string = "";
-    telefono: string = "";
+    celular: string = "";
     urlFoto: string = "";
-    ciudades: string = "";
+    ciudad: string = "";
     fechaNacimiento: string = "";
     alergias: string = "";
     eps: string = "";
     tipoSangre: string = "";
     correo: string = "";
     confirmaPassword: string = "";
-    password: string = "";
+    contrasena: string = "";
 }

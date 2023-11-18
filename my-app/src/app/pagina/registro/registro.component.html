@@ -31,7 +31,7 @@
                         <input #Telefono="ngModel"
                             [ngClass]="Telefono.invalid && (Telefono.dirty || Telefono.touched) ? 'is-invalid' : ''"
                             type="number" name="telefono" class="form-control" required
-                            [(ngModel)]="registroPacienteDTO.telefono" />
+                            [(ngModel)]="registroPacienteDTO.celular" />
                     </div>
                 </div>
 
@@ -51,7 +51,7 @@
                 <div class="mb-3 row">
                     <label class="col-sm-2 col-form-label">Ciudad: </label>
                     <div class="col-sm-10">
-                        <select name="ciudad" required [(ngModel)]="registroPacienteDTO.ciudades">
+                        <select name="ciudad" required [(ngModel)]="registroPacienteDTO.ciudad">
                             <option value="" selected>Seleccione una ciudad</option>
                             <option [value]="item" *ngFor="let item of ciudades; index as i">{{item}}</option>
                         </select>
@@ -113,7 +113,7 @@
                         <input #password="ngModel"
                             [ngClass]="password.invalid && (password.dirty || password.touched) ? 'is-invalid' : ''"
                             type="password" name="password" class="form-control" required
-                            [(ngModel)]="registroPacienteDTO.password" />
+                            [(ngModel)]="registroPacienteDTO.contrasena" />
                     </div>
                 </div>
 

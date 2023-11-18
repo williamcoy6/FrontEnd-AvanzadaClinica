@@ -8,6 +8,8 @@ import { CrearPqrsComponent } from './pagina/crear-pqrs/crear-pqrs.component';
 import { DetallePqrsComponent } from './pagina/detalle-pqrs/detalle-pqrs.component';
 import { CrearMedicoComponent } from './pagina/crear-medico/crear-medico.component';
 import { GestionCitasComponent } from './pagina/gestion-citas/gestion-citas.component';
+import { CrearCitasComponent } from './pagina/crear-citas/crear-citas.component';
+import { EditarPerfilComponent } from './pagina/editar-perfil/editar-perfil.component';
 import { LoginGuard } from './guards/permiso.service';
 import { RolesGuard } from './guards/roles.service';
 
@@ -20,7 +22,9 @@ const routes: Routes = [
   { path: "detalle-pqrs/:codigo", component: DetallePqrsComponent },
   { path: "gestion-medico", component: CrearMedicoComponent },
   { path: "gestion-citas", component: GestionCitasComponent },
+  { path: "crear-citas", component: CrearCitasComponent },
   { path: "login", component: LoginComponent, canActivate: [LoginGuard] },
+  { path: "editar-perfil", component: EditarPerfilComponent },
   { path: "registro", component: RegistroComponent, canActivate: [LoginGuard] },
   {
     path: "gestion-pqrs", component: GestionPqrsComponent, canActivate: [RolesGuard], data: {

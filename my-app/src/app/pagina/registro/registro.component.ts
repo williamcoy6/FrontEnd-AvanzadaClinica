@@ -80,7 +80,7 @@ export class RegistroComponent {
     }
   }
   public sonIguales(): boolean {
-    return this.registroPacienteDTO.password == this.registroPacienteDTO.confirmaPassword;
+    return this.registroPacienteDTO.contrasena == this.registroPacienteDTO.confirmaPassword;
   }
   public subirImagen() {
     if (this.archivos != null && this.archivos.length > 0) {

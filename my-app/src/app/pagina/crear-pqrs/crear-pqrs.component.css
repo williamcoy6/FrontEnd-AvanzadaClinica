@@ -1,0 +1,5 @@
+.textarea-with-border {
+    border: 1px solid rgb(31, 129, 168);
+    padding: 5px;
+    /* Opcional: Añade relleno para separar el texto del borde */
+}
