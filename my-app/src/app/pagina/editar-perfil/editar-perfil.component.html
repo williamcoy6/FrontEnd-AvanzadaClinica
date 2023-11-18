@@ -1,1 +1,126 @@
-<p>editar-perfil works!</p>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>Editar Perfil Médico</title>
+</head>
+<body>
+
+  <div class="container mt-5">
+    <div class="card">
+      <div class="card-header bg-primary text-white">
+        <h5 class="mb-0"><i class="fa-solid fa-user-edit me-3"></i>Editar Perfil Médico</h5>
+      </div>
+      <div class="card-body">
+        <form action="#" method="post" id="editarPerfilMedicoForm">
+          
+          <div class="form-group row">
+            <label for="codigoMedico" class="col-sm-2 col-form-label">Código del Médico:</label>
+            <div class="col-sm-10">
+              <input type="text" id="codigoMedico" name="codigoMedico" class="form-control" value="CÓDIGO_DEL_MEDICO" readonly>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="nombre" class="col-sm-2 col-form-label">Nombre:</label>
+            <div class="col-sm-10">
+              <input type="text" id="nombre" name="nombre" class="form-control" value="NOMBRE_DEL_MEDICO" readonly>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="correo" class="col-sm-2 col-form-label">Correo Electrónico:</label>
+            <div class="col-sm-10">
+              <input type="email" id="correo" name="correo" class="form-control" required>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="cedula" class="col-sm-2 col-form-label">Cédula:</label>
+            <div class="col-sm-10">
+              <input type="text" id="cedula" name="cedula" class="form-control" maxlength="10" value="CEDULA_DEL_MEDICO" readonly>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="celular" class="col-sm-2 col-form-label">Celular:</label>
+            <div class="col-sm-10">
+              <input type="tel" id="celular" name="celular" class="form-control" maxlength="20" required>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="direccion" class="col-sm-2 col-form-label">Dirección:</label>
+            <div class="col-sm-10">
+              <input type="text" id="direccion" name="direccion" class="form-control">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="password" class="col-sm-2 col-form-label">Nueva Contraseña:</label>
+            <div class="col-sm-10">
+              <input type="password" id="password" name="password" class="form-control">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="especializacion" class="col-sm-2 col-form-label">Especialización:</label>
+            <div class="col-sm-10">
+              <input type="text" id="especializacion" name="especializacion" class="form-control" required>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="urlFoto" class="col-sm-2 col-form-label">Nueva Foto:</label>
+            <div class="col-sm-10">
+              <input type="file" id="urlFoto" name="urlFoto" class="form-control-file">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="ciudad" class="col-sm-2 col-form-label">Ciudad:</label>
+            <div class="col-sm-10">
+              <select name="ciudad" class="form-control" required>
+                <option value="" selected>Seleccione una ciudad</option>
+                <!-- Agrega opciones según tus necesidades -->
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="horarios" class="col-sm-2 col-form-label">Horarios:</label>
+            <div class="col-sm-10">
+              <input type="text" id="horarios" name="horarios" class="form-control" required>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="estadoMedico" class="col-sm-2 col-form-label">Estado del Médico:</label>
+            <div class="col-sm-10">
+              <select name="estadoMedico" class="form-control" required>
+                <option value="" selected>Seleccione el estado del médico</option>
+                <!-- Agrega opciones según tus necesidades -->
+              </select>
+            </div>
+          </div>
+
+          <!-- ... (otros campos según el DTO) ... -->
+
+          <div class="form-group row">
+            <div class="col-sm-10 offset-sm-2">
+              <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
