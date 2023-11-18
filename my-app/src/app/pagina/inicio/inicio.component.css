@@ -10,3 +10,51 @@
     height: 100%;
     object-fit: cover;
 }
+
+.imagenInicio {
+    justify-content: center;
+    padding: 50px;
+    flex-direction: row;
+
+}
+
+.imagen2 {
+    padding: 20px;
+}
+
+/* Estilo para las columnas */
+.container {
+    display: flex;
+}
+
+/* Estilo para la columna de la imagen */
+.column1 {
+    flex: 1;
+}
+
+.column2 {
+    flex: 1;
+
+}
+
+.column1,
+.column2 {
+    padding: 20px;
+}
+
+
+.column1 img {
+    max-width: 100%;
+    height: auto;
+}
+
+.imagenContainer {
+    display: flex;
+    width: 500px;
+    height: 500px;
+
+}
+
+.stetoscopii {
+    margin-left: 50px;
+}

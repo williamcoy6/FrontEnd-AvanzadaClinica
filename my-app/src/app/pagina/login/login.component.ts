@@ -10,6 +10,11 @@ import { LoginDTO } from 'src/app/modelo/login-dto';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
+
+loguear() {
+throw new Error('Method not implemented.');
+}
+
   alerta!: Alerta;
   loginDTO: LoginDTO
 
