@@ -17,7 +17,11 @@ import { GestionCitasComponent } from './pagina/gestion-citas/gestion-citas.comp
 import { UsuarioInterceptor } from './interceptor/usuario.interceptor';
 import { CrearCitasComponent } from './pagina/crear-citas/crear-citas.component';
 import { EditarPerfilComponent } from './pagina/editar-perfil/editar-perfil.component';
+<<<<<<< HEAD
 import { EditarUsuarioComponent } from './pagina/editar-usuario/editar-usuario.component';
+=======
+import { RecuperarContrasenaComponent } from './pagina/recuperar-contrasena/recuperar-contrasena.component';
+>>>>>>> 6dedf5ef3c540d18641d0b38d5bfdb0a0b5c96dd
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +36,11 @@ import { EditarUsuarioComponent } from './pagina/editar-usuario/editar-usuario.c
     GestionCitasComponent,
     CrearCitasComponent,
     EditarPerfilComponent,
+<<<<<<< HEAD
     EditarUsuarioComponent
+=======
+    RecuperarContrasenaComponent
+>>>>>>> 6dedf5ef3c540d18641d0b38d5bfdb0a0b5c96dd
   ],
   imports: [
     BrowserModule,
