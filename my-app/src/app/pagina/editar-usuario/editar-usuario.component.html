@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>Editar Usuario</title>
+</head>
+<body>
+
+  <div class="container mt-5">
+    <div class="card">
+      <div class="card-header bg-primary text-white">
+        <h5 class="mb-0"><i class="fa-solid fa-user-edit me-3"></i>Editar Usuario</h5>
+      </div>
+      <div class="card-body">
+        <form action="#" method="post" id="editarUsuarioForm">
+          
+          <div class="form-group row">
+            <label for="cedula" class="col-sm-2 col-form-label">Cédula:</label>
+            <div class="col-sm-10">
+              <input type="text" id="cedula" name="cedula" class="form-control" value="CEDULA_DEL_USUARIO" readonly>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="nombre" class="col-sm-2 col-form-label">Nombre:</label>
+            <div class="col-sm-10">
+              <input type="text" id="nombre" name="nombre" class="form-control" value="NOMBRE_DEL_USUARIO" readonly>
+            </div>
+          </div>
+
+          <!-- ... (otros campos según el DTO) ... -->
+
+          <!-- Campos editables -->
+          <div class="form-group row">
+            <label for="telefono" class="col-sm-2 col-form-label">Teléfono:</label>
+            <div class="col-sm-10">
+              <input type="number" id="telefono" name="telefono" class="form-control" required>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="foto" class="col-sm-2 col-form-label">Foto:</label>
+            <div class="col-sm-8">
+              <input type="file" id="foto" name="foto" class="form-control-file" (change)="onFileChange($event)" />
+            </div>
+            <div class="col-sm-2">
+              <button type="submit" [disabled]="archivos == null" class="btn btn-primary" (click)="subirImagen()">
+                <i class="fa-solid fa-cloud-arrow-up me-2"></i>Subir Foto
+              </button>
+            </div>
+          </div>
+
+          <!-- ... (otros campos editables según el DTO) ... -->
+
+          <div class="form-group row">
+            <div class="col-sm-10 offset-sm-2">
+              <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+              <button type="button" class="btn btn-danger" (click)="borrarUsuario()">Borrar Usuario</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
