@@ -4,3 +4,10 @@ export class citaPacienteDTO {
     codigoMedico: string = " ";
     codigoPaciente: string = ""
 }
+
+// @NotBlank String cedulaPaciente,
+//@NotBlank String nombrePaciente,
+//@NotBlank String nombreMedico,
+//@NotNull LocalDateTime fecha,
+//@NotNull Especializacion especializacion,
+//@NotNull EstadoCita estadoCita 

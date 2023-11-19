@@ -1,0 +1,23 @@
+<form #f="ngForm" (ngSubmit)="recuperar()">
+
+    <div>
+        <div class="col-8">
+            <h3> Restablecer Contraseña</h3>
+            <br>
+            <div>
+                <h6> Ingresa el correo al que quieres recibir el codigo de recuperacion</h6>
+            </div>
+
+            <div class="form-floating form-size">
+                <label>Codigo</label>
+                <br>
+                <br>
+                <br>
+                <input type="email" name="correo" email="true" class="form-control" placeholder="" required="true"
+                    [(ngModel)]="recuperarContrasenaDTO.codigo">
+                <br>
+            </div>
+            <button class="btn btn-primary" type="submit">Recuperar</button>
+        </div>
+    </div>
+</form>

@@ -17,6 +17,7 @@ import { GestionCitasComponent } from './pagina/gestion-citas/gestion-citas.comp
 import { UsuarioInterceptor } from './interceptor/usuario.interceptor';
 import { CrearCitasComponent } from './pagina/crear-citas/crear-citas.component';
 import { EditarPerfilComponent } from './pagina/editar-perfil/editar-perfil.component';
+import { RecuperarContrasenaComponent } from './pagina/recuperar-contrasena/recuperar-contrasena.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +31,8 @@ import { EditarPerfilComponent } from './pagina/editar-perfil/editar-perfil.comp
     CrearMedicoComponent,
     GestionCitasComponent,
     CrearCitasComponent,
-    EditarPerfilComponent
+    EditarPerfilComponent,
+    RecuperarContrasenaComponent
   ],
   imports: [
     BrowserModule,
