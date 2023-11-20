@@ -10,6 +10,8 @@ import { CrearMedicoComponent } from './pagina/crear-medico/crear-medico.compone
 import { GestionCitasComponent } from './pagina/gestion-citas/gestion-citas.component';
 import { CrearCitasComponent } from './pagina/crear-citas/crear-citas.component';
 import { EditarPerfilComponent } from './pagina/editar-perfil/editar-perfil.component';
+import { EditarMedicoComponent } from './pagina/editar-medico/editar-medico.component';
+import { EditarUsuarioComponent } from './pagina/editar-usuario/editar-usuario.component';
 import { RecuperarContrasenaComponent } from './pagina/recuperar-contrasena/recuperar-contrasena.component';
 import { LoginGuard } from './guards/permiso.service';
 import { RolesGuard } from './guards/roles.service';
@@ -28,6 +30,8 @@ const routes: Routes = [
   { path: "editar-perfil", component: EditarPerfilComponent },
   { path: "registro", component: RegistroComponent, canActivate: [LoginGuard] },
   { path: "recuperar-contrasena", component: RecuperarContrasenaComponent },
+  { path: "editar-medico", component: EditarMedicoComponent },
+  { path: "editar-usuario", component: EditarUsuarioComponent },
   {
     path: "gestion-pqrs", component: GestionPqrsComponent, canActivate: [RolesGuard], data: {
       expectedRole: ["paciente"]

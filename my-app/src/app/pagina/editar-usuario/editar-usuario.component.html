@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <title>Editar Usuario</title>
 </head>
+
 <body>
 
   <div class="container mt-5">
@@ -15,7 +17,7 @@
       </div>
       <div class="card-body">
         <form action="#" method="post" id="editarUsuarioForm">
-          
+
           <div class="form-group row">
             <label for="cedula" class="col-sm-2 col-form-label">Cédula:</label>
             <div class="col-sm-10">
@@ -26,7 +28,7 @@
           <div class="form-group row">
             <label for="nombre" class="col-sm-2 col-form-label">Nombre:</label>
             <div class="col-sm-10">
-              <input type="text" id="nombre" name="nombre" class="form-control" value="NOMBRE_DEL_USUARIO" readonly>
+              <input type="text" id="nombre" name="nombre" class="form-control" value="NOMBRE_DEL_USUARIO">
             </div>
           </div>
 
@@ -36,7 +38,7 @@
           <div class="form-group row">
             <label for="telefono" class="col-sm-2 col-form-label">Teléfono:</label>
             <div class="col-sm-10">
-              <input type="number" id="telefono" name="telefono" class="form-control" required>
+              <input type="text" id="telefono" name="telefono" class="form-control" required>
             </div>
           </div>
 
@@ -57,7 +59,8 @@
           <div class="form-group row">
             <div class="col-sm-10 offset-sm-2">
               <button type="submit" class="btn btn-primary">Guardar Cambios</button>
-              <button type="button" class="btn btn-danger" (click)="borrarUsuario()">Borrar Usuario</button>
+              <button style="margin-left: 50px;" type="button" class="btn btn-danger" (click)="borrarUsuario()">Eliminar
+                Cuenta</button>
             </div>
           </div>
         </form>
@@ -70,4 +73,5 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
+
 </html>
