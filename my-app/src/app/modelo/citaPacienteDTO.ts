@@ -1,13 +1,8 @@
+
 export class citaPacienteDTO {
     motivo: string = " ";
-    fecha: string = ""
-    codigoMedico: string = " ";
-    codigoPaciente: string = ""
+    fecha: string = " ";
+    codigoMedico: number = 0;
+    codigoPaciente: number = 0;
 }
 
-// @NotBlank String cedulaPaciente,
-//@NotBlank String nombrePaciente,
-//@NotBlank String nombreMedico,
-//@NotNull LocalDateTime fecha,
-//@NotNull Especializacion especializacion,
-//@NotNull EstadoCita estadoCita 

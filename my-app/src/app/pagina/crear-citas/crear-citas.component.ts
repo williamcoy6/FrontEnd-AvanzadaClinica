@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Alerta } from 'src/app/modelo/alerta';
 import { citaPacienteDTO } from 'src/app/modelo/citaPacienteDTO';
 import { CitaServiceService } from 'src/app/servicios/cita-service.service';
 
@@ -9,6 +10,7 @@ import { CitaServiceService } from 'src/app/servicios/cita-service.service';
 })
 export class CrearCitasComponent {
   citaPacienteDTO: citaPacienteDTO;
+  
   constructor() {
     this.citaPacienteDTO = new citaPacienteDTO();
   }
@@ -20,5 +22,8 @@ export class CrearCitasComponent {
   public cancelarCita() {
 
   }
+  public citaAgendada() {
+    alert('Cita agendada');
 
+  }
 }

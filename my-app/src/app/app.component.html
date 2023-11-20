@@ -4,8 +4,7 @@
   justify-content-lg-start">
       <a routerLink="" class="d-flex align-items-center mb-2 mb-lg-0 text-white
   text-decoration-none">
-
-        <i class="fa-solid fa-stethoscope fs-3"></i>
+        <i class="fa-solid fa-briefcase-medical" style="font-size: 30px;"></i>
         <span class="fs-4 ms-3 me-5">{{title}}</span>
       </a>
       <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
@@ -13,8 +12,8 @@
         <li><a routerLink="/gestion-medico" class="nav-link px-2 text-white">Gestión médicos</a></li>
         <li><a routerLink="/gestion-pqrs" class="nav-link px-2 text-white">Gestión PQRS</a></li>
         <li><a routerLink="/gestion-citas" class="nav-link px-2 text-white">Gestión Citas</a></li>
-        <li><a routerLink="/editar-perfil" class="nav-link px-2 text-white">Editar perfil   <i class=" logo fa-regular fa-user"
-              style="color: #ebecee;"> </i> </a></li>
+        <li><a routerLink="/editar-perfil" class="nav-link px-2 text-white">Editar perfil <i
+              class=" logo fa-regular fa-user" style="color: #ebecee;"> </i> </a></li>
       </ul>
       <div *ngIf="!isLogged; then nologged else logged"></div>
       <ng-template #nologged>
